@@ -9,28 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<body>
 
     <nav>
-        <div class="home-btn" onclick="showPage('home')"><i class="fa-solid fa-house"></i></div>
+        <a href="#home-page" class="home-btn"><i class="fa-solid fa-house"></i></a>
         <div class="menu">
-            <a href="javascript:void(0)" onclick="showPage('about')">About me</a>
-            <a href="#">Skills</a>
-            <a href="#">Portfolio</a>
-            <a href="#" class="contact-btn">CONTACT ME</a>
+            <a href="#about-page">About me</a>
+            <a href="#skills-page">Skills</a>
+            <a href="#portfolio-page">Portfolio</a>
+            <a href="#contact-page" class="contact-btn">CONTACT ME</a>
         </div>
     </nav>
 
-    <div id="home-page" class="page-container active">
+    <div id="home-page" class="page-container">
         <div class="bg-layer blue"></div>
         <div class="bg-layer dark"></div>
         <div class="bg-layer red"></div>
 
         <div class="main-content">
             <div class="text-side">
-                <p class="intro">Hi, I am</p>
-                <h1 class="name">Mr Budi<br>Isnan</h1>
-                <p class="subtitle">Front-end Developer / UI Designer</p>
+                <p class="intro">Halooww, aku</p>
+                <h1 class="name">Eci<br>Anak baik</h1>
+                <p class="subtitle">Mahasiswa Sistem Informasi</p>
                 
                 <div class="social-row">
                   <a href="https://x.com" target="_blank" class="social-link">
@@ -62,7 +61,7 @@
             <div class="text-side">
                 <h1 class="name">About Me</h1>
                 <p class="description">
-                    Pria solo yang independen, bertanggung jawab, dan berkomitmen untuk terus berkembang dalam karier maupun kehidupan pribadi.
+                    Karakter anjing putih jantan populer dari Sanrio. Dikenal dengan telinga panjang yang bisa digunakan untuk terbang, mata biru, pipi merah muda tembem, dan ekor melingkar mirip roti kayu manis (cinnamon roll)
                 </p>
             </div>
 
@@ -83,197 +82,175 @@
         </div>
     </div>
 
-    <nav>
-    <div class="home-btn" onclick="showPage('home')"><i class="fa-solid fa-house"></i></div>
-    <div class="menu">
-        <a href="javascript:void(0)" onclick="showPage('about')">About me</a>
-        <a href="javascript:void(0)" onclick="showPage('skills')">Skills</a> <a href="#">Portfolio</a>
-        <a href="#" class="contact-btn">CONTACT ME</a>
-    </div>
-</nav>
+    <div id="skills-page" class="page-container">
+        <div class="bg-layer blue"></div>
+        <div class="bg-layer dark"></div>
+        <div class="bg-layer red"></div>
 
-<div id="skills-page" class="page-container">
+        <div class="main-content">
+            <div class="text-side">
+                <h1 class="name">Skills</h1>
+                <p class="description">
+                    Didukung oleh penguasaan berbagai skill yang relevan, saya mampu bekerja secara terstruktur, cepat beradaptasi, dan memberikan hasil optimal.
+                </p>
+            </div>
+
+            <div class="skills-grid-container">
+                <div class="skill-group">
+                    <h2 class="group-title">USING NOW</h2>
+                    <div class="grid">
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                            <span>REACT</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            <span>GIT</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                            <span>FIGMA</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                            <span>BOOTSTRAP</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass">
+                            <span>SASS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h2 class="group-title">LEARNING</h2>
+                    <div class="grid">
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TS">
+                            <span>TYPESCRIPT</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
+                            <span>NODEJS</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <span>MYSQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            <span>MONGODB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio-page" class="page-container">
+        <div class="bg-layer blue"></div>
+        <div class="bg-layer dark"></div>
+        <div class="bg-layer red"></div>
+
+        <div class="main-content">
+            <div class="text-side">
+                <h1 class="name">Portfolio</h1>
+                <p class="description">
+                    Berbagai project yang telah saya selesaikan, menampilkan proses, kualitas kerja, serta komitmen saya dalam memberikan hasil yang maksimal.
+                </p>
+            </div>
+
+            <div class="portfolio-grid-container">
+                <h2 class="group-title">PROJECTS</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-img"><img src="img2.png" alt="Landing Gojowi"></div>
+                        <div class="project-info">
+                            <h3>Landing Gojowi</h3>
+                            <p>Website landing page responsif untuk brand / produk.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="btn-live">LIVE</a>
+                                <a href="#" target="_blank" class="btn-code">CODE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img"><img src="img3.png" alt="Admin Dashboard"></div>
+                        <div class="project-info">
+                            <h3>Admin Dashboard</h3>
+                            <p>Dashboard dengan tabel, filter, dan UI komponen.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="btn-live">LIVE</a>
+                                <a href="#" target="_blank" class="btn-code">CODE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img"><img src="img4.png" alt="Portfolio Website"></div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>Website portofolio dengan section about & skills.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="btn-live">LIVE</a>
+                                <a href="#" target="_blank" class="btn-code">CODE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img"><img src="img5.png" alt="Mini App"></div>
+                        <div class="project-info">
+                            <h3>Mini App</h3>
+                            <p>Aplikasi kecil (to-do / notes) berbasis JavaScript.</p>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="btn-live">LIVE</a>
+                                <a href="#" target="_blank" class="btn-code">CODE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div id="contact-page" class="page-container">
     <div class="bg-layer blue"></div>
     <div class="bg-layer dark"></div>
     <div class="bg-layer red"></div>
-
+    
     <div class="main-content">
         <div class="text-side">
-            <h1 class="name">Skills</h1>
-            <p class="description">
-                Didukung oleh penguasaan berbagai skill yang relevan, saya mampu bekerja secara terstruktur, cepat beradaptasi, dan memberikan hasil optimal.
-            </p>
+            <h1 class="name">Contact Me</h1>
+            <p class="description">Silakan isi form di bawah untuk menghubungi saya.</p>
         </div>
 
-        <div class="skills-grid-container">
-            <div class="skill-group">
-                <h2 class="group-title">USING NOW</h2>
-                <div class="grid">
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
-                        <span>JAVASCRIPT</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                        <span>REACT</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                        <span>GIT</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
-                        <span>FIGMA</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
-                        <span>BOOTSTRAP</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass">
-                        <span>SASS</span>
-                    </div>
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" name="user_name" placeholder="Enter your name*" required>
                 </div>
-            </div>
-
-            <div class="skill-group">
-                <h2 class="group-title">LEARNING</h2>
-                <div class="grid">
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TS">
-                        <span>TYPESCRIPT</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
-                        <span>NODEJS</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                        <span>MYSQL</span>
-                    </div>
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
-                        <span>MONGODB</span>
-                    </div>
+                <div class="input-group">
+                    <input type="email" name="user_email" placeholder="Enter your email*" required>
                 </div>
-            </div>
+                <div class="input-group">
+                    <textarea name="message" placeholder="Your message*" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
         </div>
     </div>
 </div>
 
-<nav>
-    <div class="home-btn" onclick="showPage('home')"><i class="fa-solid fa-house"></i></div>
-    <div class="menu">
-        <a href="javascript:void(0)" onclick="showPage('about')">About me</a>
-        <a href="javascript:void(0)" onclick="showPage('skills')">Skills</a> 
-        <a href="javascript:void(0)" onclick="showPage('portfolio')">Portfolio</a>
-        <a href="#" class="contact-btn">CONTACT ME</a>
-    </div>
-</nav>
-
-<div id="portfolio-page" class="page-container">
-    <div class="bg-layer blue"></div>
-    <div class="bg-layer dark"></div>
-    <div class="bg-layer red"></div>
-
-    <div class="main-content">
-        <div class="text-side">
-            <h1 class="name">Portfolio</h1>
-            <p class="description">
-                Berbagai project yang telah saya selesaikan, menampilkan proses, kualitas kerja, serta komitmen saya dalam memberikan hasil yang maksimal.
-            </p>
-        </div>
-
-        <div class="portfolio-grid-container">
-            <h2 class="group-title">PROJECTS</h2>
-            <div class="project-grid">
-                
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="img2.png" alt="Landing Gojowi">
-                    </div>
-                    <div class="project-info">
-                        <h3>Landing Gojowi</h3>
-                        <p>Website landing page responsif untuk brand / produk.</p>
-                        <div class="project-links">
-                            <a href="https://youtu.be/wvtNmMmcAYw?si=ouIlVVFKocQ2bKxF" target="_blank" class="btn-live">LIVE</a>
-                            <a href="https://youtu.be/wvtNmMmcAYw?si=ouIlVVFKocQ2bKxF" target="_blank" class="btn-code">CODE</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="img3.png" alt="Admin Dashboard">
-                    </div>
-                    <div class="project-info">
-                        <h3>Admin Dashboard</h3>
-                        <p>Dashboard dengan tabel, filter, dan UI komponen.</p>
-                        <div class="project-links">
-                            <a href="https://youtu.be/wvtNmMmcAYw?si=ouIlVVFKocQ2bKxF" target="_blank" class="btn-live">LIVE</a>
-                            <a href="https://youtu.be/wvtNmMmcAYw?si=ouIlVVFKocQ2bKxF" target="_blank" class="btn-code">CODE</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="img4.png" alt="Portfolio Website">
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>Website portofolio dengan section about & skills.</p>
-                        <div class="project-links">
-                            <a href="https://youtu.be/wvtNmMmcAYw?si=ouIlVVFKocQ2bKxF" target="_blank" class="btn-live">LIVE</a>
-                            <a href="https://youtu.be/wvtNmMmcAYw?si=ouIlVVFKocQ2bKxF" target="_blank" class="btn-code">CODE</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="img5.png" alt="Mini App">
-                    </div>
-                    <div class="project-info">
-                        <h3>Mini App</h3>
-                        <p>Aplikasi kecil (to-do / notes) berbasis JavaScript.</p>
-                        <div class="project-links">
-                            <a href="https://youtu.be/wvtNmMmcAYw?si=ouIlVVFKocQ2bKxF" target="_blank" class="btn-live">LIVE</a>
-                            <a href="https://youtu.be/wvtNmMmcAYw?si=ouIlVVFKocQ2bKxF" target="_blank" class="btn-code">CODE</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-      
-    <script>
-    function showPage(pageId) {
-        // 1. Sembunyikan SEMUA halaman yang memiliki class .page-container
-        document.querySelectorAll('.page-container').forEach(page => {
-            page.classList.remove('active');
-        });
-
-        // 2. Ambil ID target (contoh: 'skills' + '-page' menjadi 'skills-page')
-        const targetPage = document.getElementById(pageId + '-page');
-
-        // 3. Jika halamannya ada, tambahkan class active agar muncul
-        if (targetPage) {
-            targetPage.classList.add('active');
-        } else {
-            console.error("Halaman dengan ID " + pageId + "-page tidak ditemukan!");
-        }
-    }
-    </script>
 </body>
+</html>
