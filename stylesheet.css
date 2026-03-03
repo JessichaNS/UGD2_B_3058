@@ -68,7 +68,6 @@ nav {
     letter-spacing: 0.5px;
 }
 
-/* Background Split System */
 .bg-layer {
     position: absolute;
     top: 0;
@@ -99,7 +98,6 @@ nav {
     z-index: 1;
 }
 
-/* Content Layout */
 .main-content {
     position: relative;
     z-index: 10;
@@ -132,7 +130,6 @@ nav {
     margin-bottom: 40px;
 }
 
-/* Social Icons */
 .social-row {
     display: flex;
     gap: 15px;
@@ -164,7 +161,6 @@ nav {
     box-shadow: 0 12px 20px rgba(0,0,0,0.15);
 }
 
-/* Image Side */
 .image-side {
     width: 50%;
     display: flex;
@@ -186,7 +182,6 @@ nav {
     object-fit: contain;
 }
 
-/* Page Container & Logic */
 .page-container {
     position: fixed;
     top: 0;
@@ -200,7 +195,6 @@ nav {
     z-index: 10;
 }
 
-/* LOGIKA TARGET (PENGGANTI JAVASCRIPT) */
 #home-page:target, 
 #about-page:target, 
 #skills-page:target, 
@@ -210,23 +204,19 @@ nav {
     opacity: 1;
 }
 
-/* Munculkan Home saat pertama kali dibuka */
 #home-page {
     display: flex;
     opacity: 1;
 }
 
-/* Sembunyikan Home jika ada target lain */
 :target ~ #home-page {
     display: none;
 }
 
-/* Pastikan Home muncul jika ditarget lagi */
 #home-page:target {
     display: flex;
 }
 
-/* Section Titles & Description */
 .description {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -236,7 +226,6 @@ nav {
     margin-top: 10px;
 }
 
-/* Glass Card */
 .card-side {
     width: 50%;
     display: flex;
@@ -284,7 +273,6 @@ nav {
     color: black;
 }
 
-/* Skills Grid */
 .skills-grid-container {
     width: 60%;
     display: flex;
@@ -336,18 +324,16 @@ nav {
     text-transform: uppercase;
 }
 
-/* Portfolio Grid */
 .portfolio-grid-container {
-    width: 50%;             /* Sesuaikan lebar area portfolio */
-    margin-left: auto;      /* KUNCI: Mendorong kontainer ke paling kanan */
-    margin-right: 20px;     /* Beri sedikit jarak dari pinggir layar */
+    width: 50%;             
+    margin-left: auto;      
+    margin-right: 20px;     
     z-index: 15;
     padding-left: 0;
 }
 
 .project-grid {
     display: grid;
-    /* Ganti 1fr menjadi ukuran pixel yang pasti agar semua kartu sama lebar */
     grid-template-columns: repeat(2, 200px); 
     gap: 20px;
     justify-content: end;
@@ -357,7 +343,7 @@ nav {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 12px;   /* Lengkungan lebih kecil agar serasi */
+    border-radius: 12px;   
     overflow: hidden;
     color: black;
     transition: transform 0.3s ease;
@@ -369,7 +355,7 @@ nav {
 
 .project-img { 
     width: 100%; 
-    height: 100px;         /* Tinggi gambar dibatasi */
+    height: 100px;        
     overflow: hidden; 
     background-color: #f0f0f0;
 }
@@ -383,12 +369,12 @@ nav {
     padding: 10px 12px;
 }
 
-.project-info h3 { font-size: 0.9rem;     /* Ukuran font dikecilkan */
+.project-info h3 { font-size: 0.9rem;     
     margin-bottom: 4px; 
     font-weight: 800;
 }
 
-.project-info p { font-size: 0.7rem;     /* Deskripsi lebih kecil */
+.project-info p { font-size: 0.7rem;    
     opacity: 0.8; 
     margin-bottom: 10px; 
     line-height: 1.2;
@@ -408,10 +394,9 @@ nav {
 
 .project-links a:hover { background: white; color: #2F4156; }
 
-/* Contact Form */
 .contact-form-container {
-    position: relative; /* Menambah posisi agar z-index bekerja */
-    z-index: 60;       /* Angka tinggi agar berada di atas bg-layer */
+    position: relative; 
+    z-index: 60;       
     width: 60%;
     padding-left: 50px;
 }
@@ -426,11 +411,11 @@ nav {
 .input-group input, 
 .input-group textarea {
     width: 100%;
-    background: rgba(255, 255, 255, 0.1); /* Beri sedikit warna agar terlihat area ketiknya */
+    background: rgba(255, 255, 255, 0.1); 
     border: none;
     border-bottom: 2px solid black;
     padding: 12px 15px;
-    color: black; /* Warna teks saat diketik */
+    color: black; 
     outline: none;
     border-radius: 5px;
 }
